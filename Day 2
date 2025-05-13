@@ -1,0 +1,42 @@
+ Tools Used:
+Suricata (Network-based IDS): Monitors network traffic and generates alerts for suspicious activity.
+
+📝 What I Did:
+Generated Alerts with Suricata:
+
+Used nmap to perform a port scan on my machine.
+
+This triggered Suricata to generate alerts for the scan.
+
+Suricata Log Review:
+
+Examined eve.json logs to analyze the generated alerts from Suricata.
+
+Understanding Suricata Logs:
+
+The logs provided useful data such as:
+
+Source & Destination IP
+
+Alert Type (e.g., Port Scan)
+
+Alert Category
+
+Commands Used:
+
+bash
+Copy
+Edit
+sudo apt install nmap -y
+nmap -sS -p 1-65535 <Your IP>  # Trigger port scan
+sudo tail -f /var/log/suricata/eve.json  # Monitor Suricata's eve.json logs
+📂 Logs Location:
+Suricata Alerts: /var/log/suricata/eve.json
+
+🔍 Next Steps:
+Explore custom Suricata rules to enhance detection.
+
+Continue simulating different attacks to better understand alerts.
+
+Integrate more tools for traffic generation and log analysis.
+
