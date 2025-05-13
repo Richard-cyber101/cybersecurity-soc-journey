@@ -1,0 +1,20 @@
+# Day 2 – Deep Dive into IDS & Suricata Architecture
+
+## 🧠 What I Learned:
+
+### 🔹 What is an IDS?
+- IDS = Intrusion Detection System
+- Monitors systems/networks for malicious behavior or violations
+- Types:
+  - **NIDS (Network-based IDS):** e.g., Suricata, Snort
+  - **HIDS (Host-based IDS):** e.g., Auditd
+
+### 🔹 How Suricata Works:
+- Captures packets (AF_PACKET / libpcap)
+- Inspects traffic at multiple layers (L2–L7)
+- Matches traffic against detection rules
+- Logs structured alerts in `eve.json`
+
+### 🔹 Suricata Rule Breakdown:
+```text
+alert tcp any any -> any 80 (msg:"HTTP traffic detected"; sid:1000001; rev:1;)
