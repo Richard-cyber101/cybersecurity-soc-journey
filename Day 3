@@ -1,0 +1,21 @@
+# Suricata Packet Analysis – Day 3
+
+This project documents my Day 3 of SOC Analyst learning where I used Suricata to analyze network traffic (ICMP and HTTP). It includes logs, custom rules, and observations.
+
+## 🧠 Topics Covered
+- Packet structure, headers, payload
+- ICMP packet analysis using `ping`
+- HTTP GET request and response analysis
+- Use of Suricata in IDS mode
+- Log parsing using `tail` and `grep`
+
+## 📂 Files
+- `logs/`: Raw Suricata logs (fast.log, eve.json)
+- `rules/`: Custom Suricata rules used
+- `notes/`: Summary notes and answers
+- `screenshots/`: Visuals of terminal/log outputs
+
+## 🔧 Tools
+- Suricata IDS
+- Ping, curl
+- grep, tail
